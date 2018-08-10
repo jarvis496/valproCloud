@@ -31,11 +31,11 @@ eureka:
     service-url: 
       defaultZone: http://localhost:9101/eureka
   instance:
-    instance-id: localhost
+    instance-id: userprovider
     prefer-ip-address: true
  
 info:
-  app.name: valproCloud-user-provider
+  app.name: valproCloud
   company.name: www.cindata.cn
   build.artifactId: $project.artifactId$
   build.version: $project.version$
@@ -70,11 +70,11 @@ eureka:
     service-url: 
       defaultZone: http://localhost:9001/eureka
   instance:
-    instance-id: localhost
+    instance-id: userprovider
     prefer-ip-address: true
  
 info:
-  app.name: valproCloud-user-provider-test
+  app.name: valproCloud
   company.name: www.cindata.cn
   build.artifactId: $project.artifactId$
   build.version: $project.version$
