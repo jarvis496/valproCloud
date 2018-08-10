@@ -29,9 +29,9 @@ mybatis:
 eureka: 
   client: #客户端注册进eureka服务列表内
     service-url: 
-      defaultZone: http://eureka9101.com:9101/eureka
+      defaultZone: http://localhost:9101/eureka
   instance:
-    instance-id: user-9001.com
+    instance-id: localhost
     prefer-ip-address: true
  
 info:
@@ -41,7 +41,7 @@ info:
   build.version: $project.version$
 ---
 server:
-  port: 9002
+  port: 9001
 spring: 
    profiles: test
    application: 
@@ -68,13 +68,13 @@ mybatis:
 eureka: 
   client: #客户端注册进eureka服务列表内
     service-url: 
-      defaultZone: http://eureka9001.com:9001/eureka
+      defaultZone: http://localhost:9001/eureka
   instance:
-    instance-id: dept-9001.com
+    instance-id: localhost
     prefer-ip-address: true
  
 info:
-  app.name: valproCloud-user-provider02
+  app.name: valproCloud-user-provider-test
   company.name: www.cindata.cn
   build.artifactId: $project.artifactId$
   build.version: $project.version$
