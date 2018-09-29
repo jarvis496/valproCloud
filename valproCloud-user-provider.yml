@@ -8,7 +8,7 @@ server:
 spring: 
    profiles: dev
    application: 
-    name: valproCloud-user-provider
+    name: vpro
    zipkin:
     base-url: http://localhost:9400
     enabled: true
